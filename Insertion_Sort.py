@@ -9,7 +9,16 @@ def insertion_sort(array):
 
         array[position] = current_value
 
-array = [34,65,23,77,3,34,423,9,0]
+choice = ''
+array = []
+while choice != 'q':
+    choice = input("Please either enter a number or enter 'q' to quit: ")
+    if choice == 'q':
+        break
+    else:
+        array.append(int(choice))
+
+        
 insertion_sort(array)
 print(array)
     
